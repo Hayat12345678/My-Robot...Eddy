@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/39413efdb8.js" crossorigin="anonymous"></script>
+    <title> My Robot...Eddy</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Robot... <i class="fab fa-android"></i>... Eddy </h1>
+    <img id="scream" src="ufo.png" alt="The Scream" width="100" height="70">
+
+    
+    <!-- POSITION X -->
+    <span>Position X: </span>
+    <span id="posX">0</span>
+    <br/>
+
+    <!-- POSITION Y -->
+    <span>Position Y: </span>
+    <span id="posY">0</span>
+    <br/>
+
+    <!-- ORIENTIERUNG -->
+    <span>Himmelsrichtung: </span>
+    <span id="heading">EAST</span>
+    <br/>
+
+    <!-- Button für Move -->
+    <button id="moveButton" onclick="step()">
+        MOVE!
+    </button>
+
+    <!-- Button für Rotation-->
+    <button id="rotateButton" onclick="rotate()">
+        ROTATE!
+    </button>
+
+    <!--TODO: Eine Canvas -->
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <!-- JAVASCRIPT VERKNÜPFUNG-->
+
+    <script src="index.js">  </script>
+</body>
+</html>
